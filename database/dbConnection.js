@@ -5,8 +5,7 @@ export const dbConnection = () => {
         .connect(process.env.MONGO_URI, {
             dbName: "MERN_JOB_SEEKING_WEBAPP",
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false
+            useUnifiedTopology: true
         })
         .then(() => {
             console.log("Connected to database.");
